@@ -1,6 +1,10 @@
 # AI Ticket Triage for n8n (synthetic demo)
 
+[![tests](https://github.com/ndvelasquez/n8n-ai-ticket-triage/actions/workflows/ci.yml/badge.svg)](https://github.com/ndvelasquez/n8n-ai-ticket-triage/actions/workflows/ci.yml)
+
 An n8n workflow that suggests a category, priority and queue for an incoming support ticket, and **sends anything doubtful to a human**. The model proposes; the code decides. It returns a *suggested* queue and never changes a ticket by itself.
+
+**Try it live:** [nestorvelasquez.vercel.app/work/ai-ticket-triage](https://nestorvelasquez.vercel.app/work/ai-ticket-triage#try) runs the same two Code nodes (ported to a small serverless function, differentially tested against this workflow) on a ticket you type. It sends your text to Google's Gemini API on the free tier, so use invented tickets only. Case study and results: same page.
 
 > **Synthetic demo; not a client project.** Every ticket in this repo is invented. It contains no customer data and no material from any employer or client. Built independently on personal tooling.
 
