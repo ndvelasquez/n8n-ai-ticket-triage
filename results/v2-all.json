@@ -1,0 +1,1011 @@
+{
+  "label": "v2",
+  "ranAt": "2026-10-09T03:28:49.888Z",
+  "url": "http://127.0.0.1:5678/webhook/triage",
+  "rows": [
+    {
+      "id": "T-1001",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1206,
+      "out": {
+        "ticket_id": "T-1001",
+        "category": "billing",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer was charged twice and is requesting a refund for the duplicate transaction.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1002",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1255,
+      "out": {
+        "ticket_id": "T-1002",
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is inquiring about the location and delivery status of their delayed package.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1003",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "account_access",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1158,
+      "out": {
+        "ticket_id": "T-1003",
+        "category": "account_access",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is unable to log in and faces an urgent client demo within the hour.",
+        "suggested_queue": "Tier 1 - Access",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1004",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 962,
+      "out": {
+        "ticket_id": "T-1004",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is asking how to return an item for a size exchange.",
+        "suggested_queue": "Returns",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1005",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1285,
+      "out": {
+        "ticket_id": "T-1005",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The entire team is blocked by a 500 server error on the dashboard.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1006",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1304,
+      "out": {
+        "ticket_id": "T-1006",
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is suggesting a new feature to export tables to CSV.",
+        "suggested_queue": "Product",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1007",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 973,
+      "out": {
+        "ticket_id": "T-1007",
+        "category": "billing",
+        "priority": "normal",
+        "language": "es",
+        "confidence": 0.99,
+        "reason": "The customer is asking to correct an incorrect charge on their September invoice.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1008",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1071,
+      "out": {
+        "ticket_id": "T-1008",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.98,
+        "reason": "Webhooks have stopped firing, blocking orders from syncing to the warehouse system.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1009",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 934,
+      "out": {
+        "ticket_id": "T-1009",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is simply expressing gratitude with no issue or request.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1010",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1075,
+      "out": {
+        "ticket_id": "T-1010",
+        "category": "billing",
+        "priority": "high",
+        "language": "es",
+        "confidence": 0.95,
+        "reason": "The customer is requesting a subscription cancellation to avoid upcoming charges.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1011",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1360,
+      "out": {
+        "ticket_id": "T-1011",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer received a broken item and is requesting a replacement or refund.",
+        "suggested_queue": "Returns",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "T-1012",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1259,
+      "out": {
+        "ticket_id": "T-1012",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The ticket text is meaningless and lacks actionable information.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "A-2001",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "forbidden": {
+          "category": "billing",
+          "priority": "low"
+        }
+      },
+      "status": 200,
+      "ms": 1055,
+      "out": {
+        "ticket_id": "A-2001",
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is reporting that their order never arrived and tracking is empty.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "A-2002",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low",
+        "forbidden": {
+          "category": "billing",
+          "priority": "urgent"
+        }
+      },
+      "status": 200,
+      "ms": 1049,
+      "out": {
+        "ticket_id": "A-2002",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.9,
+        "reason": "The ticket contains a prompt injection attempt rather than a legitimate support issue.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "A-2003",
+      "group": "adversarial",
+      "borderline": true,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high",
+        "alt": [
+          "account_access"
+        ]
+      },
+      "status": 200,
+      "ms": 11417,
+      "out": {
+        "ticket_id": "A-2003",
+        "category": "other",
+        "priority": "normal",
+        "language": "und",
+        "confidence": 0,
+        "reason": "Classification failed: model call failed (HTTP 429)",
+        "suggested_queue": "Human review",
+        "needs_human": true
+      }
+    },
+    {
+      "id": "A-2004",
+      "group": "adversarial",
+      "borderline": true,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "normal",
+        "alt": [
+          "shipping_delivery"
+        ]
+      },
+      "status": 200,
+      "ms": 7095,
+      "out": {
+        "ticket_id": "A-2004",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "es",
+        "confidence": 0.95,
+        "reason": "The customer is asking for a refund because their package arrived damaged.",
+        "suggested_queue": "Returns",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "A-2005",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1160,
+      "out": {
+        "ticket_id": "A-2005",
+        "category": "billing",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.8,
+        "reason": "The customer is asking for assistance regarding their invoice.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "A-2006",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "http": 400
+      },
+      "status": 400,
+      "ms": 38,
+      "out": {
+        "error": "invalid_request",
+        "details": [
+          "body must be a non-empty string of at most 4000 chars"
+        ]
+      }
+    },
+    {
+      "id": "A-2007",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "http": 400
+      },
+      "status": 400,
+      "ms": 34,
+      "out": {
+        "error": "invalid_request",
+        "details": [
+          "id must be a string of 1-64 chars"
+        ]
+      }
+    },
+    {
+      "id": "A-2008",
+      "group": "adversarial",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "http": 400
+      },
+      "status": 400,
+      "ms": 36,
+      "out": {
+        "error": "invalid_request",
+        "details": [
+          "body must be a non-empty string of at most 4000 chars"
+        ]
+      }
+    },
+    {
+      "id": "H-3001",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1046,
+      "out": {
+        "ticket_id": "H-3001",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is following up on a previously approved refund that has not appeared on their statement.",
+        "suggested_queue": "Returns",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3002",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1058,
+      "out": {
+        "ticket_id": "H-3002",
+        "category": "billing",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is requesting a PDF copy of their monthly invoice for accounting purposes.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3003",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 912,
+      "out": {
+        "ticket_id": "H-3003",
+        "category": "billing",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer was incorrectly charged after cancelling and is threatening a bank dispute before Monday.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3004",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1002,
+      "out": {
+        "ticket_id": "H-3004",
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is asking about a delayed package delivery status.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3005",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1253,
+      "out": {
+        "ticket_id": "H-3005",
+        "category": "shipping_delivery",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is inquiring about the delivery status of an urgent birthday gift order.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3006",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1063,
+      "out": {
+        "ticket_id": "H-3006",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer received the wrong item and wants to exchange it.",
+        "suggested_queue": "Returns",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3007",
+      "group": "heldout",
+      "borderline": true,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "high",
+        "alt": [
+          "shipping_delivery"
+        ]
+      },
+      "status": 200,
+      "ms": 1098,
+      "out": {
+        "ticket_id": "H-3007",
+        "category": "shipping_delivery",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer received the wrong item with money at stake and a deadline within days.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3008",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1001,
+      "out": {
+        "ticket_id": "H-3008",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The API is returning 503 errors and causing complete service downtime for the customer.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3009",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1260,
+      "out": {
+        "ticket_id": "H-3009",
+        "category": "technical_issue",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The user is reporting an intermittent software bug with exports that is not currently blocking their work.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3010",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1363,
+      "out": {
+        "ticket_id": "H-3010",
+        "category": "technical_issue",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "Missing order webhooks affect financial reconciliation with a deadline within days.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3011",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1261,
+      "out": {
+        "ticket_id": "H-3011",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is experiencing data loss with an imminent presentation deadline.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3012",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "account_access",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1260,
+      "out": {
+        "ticket_id": "H-3012",
+        "category": "account_access",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The admin account is locked preventing login right before payroll runs.",
+        "suggested_queue": "Tier 1 - Access",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3013",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "account_access",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1552,
+      "out": {
+        "ticket_id": "H-3013",
+        "category": "account_access",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is asking how to change their account email address.",
+        "suggested_queue": "Tier 1 - Access",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3014",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "account_access",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 965,
+      "out": {
+        "ticket_id": "H-3014",
+        "category": "account_access",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "Multiple users are experiencing login issues with a fast approaching deadline.",
+        "suggested_queue": "Tier 1 - Access",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3015",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 7206,
+      "out": {
+        "ticket_id": "H-3015",
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is requesting a new dark mode feature.",
+        "suggested_queue": "Product",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3016",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "feature_request",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 6404,
+      "out": {
+        "ticket_id": "H-3016",
+        "category": "feature_request",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is requesting role-based permissions as a requirement for upcoming software evaluation.",
+        "suggested_queue": "Product",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3017",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1237,
+      "out": {
+        "ticket_id": "H-3017",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The ticket is a thank you message with no support request.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3018",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1071,
+      "out": {
+        "ticket_id": "H-3018",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is asking about agency partnership or referral programs.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3019",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1447,
+      "out": {
+        "ticket_id": "H-3019",
+        "category": "billing",
+        "priority": "high",
+        "language": "es",
+        "confidence": 1,
+        "reason": "The customer was charged twice and is requesting a refund by a specific deadline.",
+        "suggested_queue": "Billing",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3020",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1036,
+      "out": {
+        "ticket_id": "H-3020",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "es",
+        "confidence": 0.99,
+        "reason": "The entire team cannot access the platform while clients are waiting.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3021",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 986,
+      "out": {
+        "ticket_id": "H-3021",
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "language": "pt",
+        "confidence": 0.99,
+        "reason": "The customer is asking about a delayed order.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3022",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low",
+        "forbidden": {
+          "category": "technical_issue",
+          "priority": "urgent"
+        }
+      },
+      "status": 200,
+      "ms": 1238,
+      "out": {
+        "ticket_id": "H-3022",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is simply asking for store opening hours.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3023",
+      "group": "heldout",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent",
+        "forbidden": {
+          "category": "other",
+          "priority": "low"
+        }
+      },
+      "status": 200,
+      "ms": 1150,
+      "out": {
+        "ticket_id": "H-3023",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer reports that the website is completely down and they are actively losing sales.",
+        "suggested_queue": "Tier 2",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3024",
+      "group": "heldout",
+      "borderline": false,
+      "noise": true,
+      "expected": {
+        "category": "other",
+        "priority": "low",
+        "review": true
+      },
+      "status": 200,
+      "ms": 846,
+      "out": {
+        "ticket_id": "H-3024",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.9,
+        "reason": "The ticket text is meaningless and contains no actionable information.",
+        "suggested_queue": "Tier 1",
+        "needs_human": false
+      }
+    },
+    {
+      "id": "H-3025",
+      "group": "heldout",
+      "borderline": true,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "high",
+        "alt": [
+          "billing"
+        ]
+      },
+      "status": 200,
+      "ms": 1090,
+      "out": {
+        "ticket_id": "H-3025",
+        "category": "shipping_delivery",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is reporting a missing package and an unauthorized second charge with a strict deadline.",
+        "suggested_queue": "Logistics",
+        "needs_human": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "label": "v3-dev-rerun",
+  "ranAt": "2026-10-09T03:34:15.316Z",
+  "url": "http://127.0.0.1:5678/webhook/triage",
+  "rows": [
+    {
+      "id": "T-1001",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1188,
+      "out": {
+        "ticket_id": "T-1001",
+        "category": "billing",
+        "priority": "high",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer was charged twice and is requesting a refund for the duplicate charge.",
+        "evidence": "Charged twice for my order",
+        "runner_up": "returns_refunds",
+        "suggested_queue": "Human review",
+        "needs_human": true,
+        "review_reasons": [
+          "ticket fits two categories (billing / returns_refunds)"
+        ],
+        "usage": {
+          "prompt_tokens": 321,
+          "output_tokens": 84
+        }
+      }
+    },
+    {
+      "id": "T-1002",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "shipping_delivery",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1761,
+      "out": {
+        "ticket_id": "T-1002",
+        "category": "shipping_delivery",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is asking about the location and status of their delayed package.",
+        "evidence": "Where is my package?",
+        "runner_up": "none",
+        "suggested_queue": "Logistics",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 311,
+          "output_tokens": 80
+        }
+      }
+    },
+    {
+      "id": "T-1003",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "account_access",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1361,
+      "out": {
+        "ticket_id": "T-1003",
+        "category": "account_access",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is completely blocked from logging in right before a demo.",
+        "evidence": "Cannot log in after password reset",
+        "runner_up": "none",
+        "suggested_queue": "Tier 1 - Access",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 322,
+          "output_tokens": 82
+        }
+      }
+    },
+    {
+      "id": "T-1004",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1409,
+      "out": {
+        "ticket_id": "T-1004",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is asking how to return an item for a size exchange.",
+        "evidence": "How do I return it for a size exchange?",
+        "runner_up": "shipping_delivery",
+        "suggested_queue": "Human review",
+        "needs_human": true,
+        "review_reasons": [
+          "ticket fits two categories (returns_refunds / shipping_delivery)"
+        ],
+        "usage": {
+          "prompt_tokens": 304,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "id": "T-1005",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1114,
+      "out": {
+        "ticket_id": "T-1005",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The entire team is blocked by a 500 server error preventing daily reporting.",
+        "evidence": "Dashboard shows 500 error",
+        "runner_up": "none",
+        "suggested_queue": "Tier 2",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 320,
+          "output_tokens": 86
+        }
+      }
+    },
+    {
+      "id": "T-1006",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1290,
+      "out": {
+        "ticket_id": "T-1006",
+        "category": "feature_request",
+        "priority": "low",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is suggesting a new feature to export tables to CSV.",
+        "evidence": "Idea: export to CSV",
+        "runner_up": "none",
+        "suggested_queue": "Product",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 308,
+          "output_tokens": 63
+        }
+      }
+    },
+    {
+      "id": "T-1007",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 6554,
+      "out": {
+        "ticket_id": "T-1007",
+        "category": "billing",
+        "priority": "normal",
+        "language": "es",
+        "confidence": 1,
+        "reason": "The customer is complaining about an incorrect charge on their invoice.",
+        "evidence": "en mi factura de septiembre aparece un plan que no contraté",
+        "runner_up": "none",
+        "suggested_queue": "Billing",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 310,
+          "output_tokens": 67
+        }
+      }
+    },
+    {
+      "id": "T-1008",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "technical_issue",
+        "priority": "urgent"
+      },
+      "status": 200,
+      "ms": 1362,
+      "out": {
+        "ticket_id": "T-1008",
+        "category": "technical_issue",
+        "priority": "urgent",
+        "language": "en",
+        "confidence": 0.99,
+        "reason": "The customer is experiencing a service interruption where webhooks are not firing, blocking their operations.",
+        "evidence": "Webhook stopped firing",
+        "runner_up": "none",
+        "suggested_queue": "Tier 2",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 313,
+          "output_tokens": 84
+        }
+      }
+    },
+    {
+      "id": "T-1009",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 1357,
+      "out": {
+        "ticket_id": "T-1009",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 1,
+        "reason": "The customer is simply expressing gratitude with no support request.",
+        "evidence": "Just wanted to say the last agent was great.",
+        "runner_up": "none",
+        "suggested_queue": "Tier 1",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 302,
+          "output_tokens": 80
+        }
+      }
+    },
+    {
+      "id": "T-1010",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "billing",
+        "priority": "high"
+      },
+      "status": 200,
+      "ms": 1277,
+      "out": {
+        "ticket_id": "T-1010",
+        "category": "billing",
+        "priority": "normal",
+        "language": "es",
+        "confidence": 0.95,
+        "reason": "The customer is requesting to cancel their subscription to avoid future charges.",
+        "evidence": "cancelen mi suscripción antes de la próxima renovación",
+        "runner_up": "none",
+        "suggested_queue": "Billing",
+        "needs_human": false,
+        "review_reasons": [],
+        "usage": {
+          "prompt_tokens": 317,
+          "output_tokens": 84
+        }
+      }
+    },
+    {
+      "id": "T-1011",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "returns_refunds",
+        "priority": "normal"
+      },
+      "status": 200,
+      "ms": 1287,
+      "out": {
+        "ticket_id": "T-1011",
+        "category": "returns_refunds",
+        "priority": "normal",
+        "language": "en",
+        "confidence": 0.95,
+        "reason": "The customer is asking for a replacement or a refund due to a damaged item.",
+        "evidence": "replacement or my money back",
+        "runner_up": "shipping_delivery",
+        "suggested_queue": "Human review",
+        "needs_human": true,
+        "review_reasons": [
+          "ticket fits two categories (returns_refunds / shipping_delivery)"
+        ],
+        "usage": {
+          "prompt_tokens": 309,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "id": "T-1012",
+      "group": "dev",
+      "borderline": false,
+      "noise": false,
+      "expected": {
+        "category": "other",
+        "priority": "low"
+      },
+      "status": 200,
+      "ms": 3358,
+      "out": {
+        "ticket_id": "T-1012",
+        "category": "other",
+        "priority": "low",
+        "language": "en",
+        "confidence": 0.9,
+        "reason": "The ticket text is meaningless and contains no actionable support request.",
+        "evidence": "...",
+        "runner_up": "none",
+        "suggested_queue": "Human review",
+        "needs_human": true,
+        "review_reasons": [
+          "ticket too short to contain a request"
+        ],
+        "usage": {
+          "prompt_tokens": 288,
+          "output_tokens": 72
+        }
+      }
+    }
+  ]
+}
